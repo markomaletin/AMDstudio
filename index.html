@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AMD studio | Početna</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/osnova.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Početna strana salona AMD Studio. PC Wizard je firma koja se bavi pružanjem IT usluga u Pančevu i okolini. Vršimo popravke desktop i popravke laptop računara svih modela. U našoj ponudi imamo laptopove, računare i mobilne telefone.">
+    <meta name="author" content="Marko Maletin markomaletin@gmail.com">
+    <meta name="keywords" content="AMD Studio, sminka, nokti, depilacija, masaza, frizura">
+
+
+    <style>
+
+        #sadrzaj
+        {
+            color: #171415;
+            padding: 50px;
+            height: 1800px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            //margin-top: 140px;
+            margin-bottom: 600px;
+           // box-shadow: 0px 0px 5px gray ;
+            z-index: -10;
+        }
+
+        #baner
+        {
+            width: 100%;
+            margin-top: 120px;
+        }
+
+       .red
+       {
+           width: 100%;
+           min-height: 240px;
+           margin-bottom: 50px;
+          // background-color: red;
+       }
+
+       .red a
+       {
+           color: #171415;
+           text-decoration: none;
+       }
+
+
+        .spoljasnji
+        {
+            width: 24%;
+            float: left;
+            margin-right: 1%;
+            border: rgba(0,0,0,0.1) 1px solid;
+            box-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+        }
+
+
+        .spoljasnji:hover
+        {
+            border-radius: 10px;
+            border-color: rgba(0,0,0,0.3);
+            transition-duration: 500ms;
+        }
+
+        .spoljasnji:hover img
+        {
+            transition-duration: 500ms;
+            border-radius: 10px;
+            opacity: 0.8;
+
+        }
+
+        .spoljasnji:hover h2
+        {
+            font-size: 26px;
+            color: #80002a;
+        }
+
+        .red .spoljasnji:last-child
+        {
+            margin-right: 0;
+        }
+
+        .spoljasnji img
+        {
+            width: 100%;
+        }
+
+        .spoljasnji h2
+        {
+            text-align: center;
+        }
+
+        .akcije
+        {
+            width: 100%;
+            height: auto;
+            clear: both;
+        }
+
+        .akcije > img
+        {
+            width: 50%;
+        }
+
+        .akcije > div
+        {
+
+            width: 50%;
+            float: right;
+        }
+
+        .akcije > div
+        {
+            width:45%;
+            padding: 20px;
+            height: auto;
+            float: right;
+        }
+
+        .akcije  h2
+        {
+            text-align: center;
+        }
+
+        footer
+        {
+            top: 30vh;
+        }
+
+
+        @media only screen and (max-width: 1300px) {
+
+            #sadrzaj
+            {
+                left: 0;
+                margin: 0 auto;
+                width: 99%;
+                padding: 0;
+            }
+
+            .spoljasnji
+            {
+                clear: both;
+                width: 99%;
+                margin: 20px 0;
+            }
+
+            .akcije
+            {
+
+            }
+
+            .akcije img
+            {
+                width: 100%;
+                clear: both;
+            }
+
+            .akcije div {
+                width: 100%;
+                clear: both;
+                padding: 0;
+            }
+
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+<header>
+    <a href="index.html"><img id="logo" src="slike/logo.png" alt="AMD studio logo" ></a>
+    <nav id="navigacija">
+        <ul>
+
+            <a href="#"><li id="trenutna">Naslovna</li></a>
+            <a href="usluge.html"><li>Usluge</li></a>
+            <a href="galerija.html"> <li>Galerija</li></a>
+            <a href="o_nama.html"> <li>O nama</li></a>
+            <a href="kontakt.html"><li>Kontakt</li></a>
+
+        </ul>
+    </nav>
+
+        <div id="ikonice">
+            <a href="https://sr-rs.facebook.com/" target="_blank"><img class="ikonica" src="slike/facebook.png" alt="AMD studio facebook"></a>
+            <a href="https://www.instagram.com/?hl=sr" target="_blank"><img class="ikonica" src="slike/instagram.png" alt="AMD studio instagram"></a>
+        </div>
+
+
+
+    <button type="button" id="otvori_meni_dugme" ></button>
+
+</header>
+
+
+<div id="meni_dugme">
+    <a href="index.html"><img src="slike/logo.png" ></a>
+    <hr>
+    <nav id="navigacija_dugme">
+        <ul>
+
+            <a href="#"><li>Naslovna</li></a>
+            <a href="usluge.html"><li>Usluge</li></a>
+            <a href="galerija.html"> <li>Galerija</li></a>
+            <a href="o_nama.html"> <li>O nama</li></a>
+            <a href="kontakt.html"><li>Kontakt</li></a>
+
+        </ul>
+
+    </nav>
+
+</div>
+
+
+<img id="baner" src="slike/ffsdas.jpg"  alt="AMD studio promocija">
+
+<div id="sadrzaj">
+
+
+
+
+    <h1>NAŠE USLUGE</h1>
+    <hr>
+    <div class="red">
+
+
+        <div class="spoljasnji">
+            <a class="link" href="#">
+                <img src="slike/sminka.jpg" alt="AMD studio šminka">
+                <h2>Šminka</h2>
+            </a>
+        </div>
+
+        <div class="spoljasnji">
+            <a class="link" href="#">
+                <img src="slike/pedikir.jpg" alt="AMD studio pedikir">
+                <h2>Pedikir</h2>
+            </a>
+        </div>
+
+        <div class="spoljasnji">
+            <a class="link" href="#">
+                <img src="slike/manikir.jpg" alt="AMD studio manikir">
+                <h2>Manikir</h2>
+            </a>
+        </div>
+
+        <div class="spoljasnji">
+            <a class="link" href="#">
+                <img src="slike/frizer.jpg"  alt="AMD studio frizer">
+                <h2>Frizer</h2>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="red">
+
+
+        <div class="spoljasnji">
+            <a class="link" href="#">
+                <img src="slike/masaza.jpg"  alt="AMD studio masaze">
+                <h2>Masaže</h2>
+            </a>
+        </div>
+
+
+
+        <div class="spoljasnji">
+            <a class="link" href="#">
+                <img src="slike/tretmanilica.jpg"  alt="AMD studio tretman lica">
+                <h2>Tretmani lica</h2>
+            </a>
+        </div>
+
+        <div class="spoljasnji">
+            <a class="link" href="#">
+                <img src="slike/maderoterapija.jpg"  alt="AMD studio maderoterapije">
+                <h2>Maderoterapije</h2>
+            </a>
+        </div>
+
+        <div class="spoljasnji">
+            <a class="link" href="#">
+                <img src="slike/depilacija.jpg"  alt="AMD studio depilacija">
+                <h2>Depilacija</h2>
+            </a>
+        </div>
+
+    </div>
+
+
+
+    <h1>PROMOTIVNE AKCIJE</h1>
+    <hr>
+
+    <div class="akcije">
+        <img src="slike/ffsdas.jpg"  alt="AMD studio akcija">
+        <div>
+            <h2>Naslov</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum facilis inventore labore molestias natus nesciunt nobis quaerat quos voluptas. Accusamus atque, dolorum hic magni minima minus placeat quidem sapiente voluptates.</p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="akcije">
+        <img src="slike/ffsdas.jpg" alt="AMD studio akcija">
+        <div>
+            <h2>Naslov</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum facilis inventore labore molestias natus nesciunt nobis quaerat quos voluptas. Accusamus atque, dolorum hic magni minima minus placeat quidem sapiente voluptates.</p>
+        </div>
+
+    </div>
+    <hr>
+
+    <div class="akcije">
+        <img src="slike/ffsdas.jpg" alt="AMD studio akcija">
+        <div>
+            <h2>Naslov</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum facilis inventore labore molestias natus nesciunt nobis quaerat quos voluptas. Accusamus atque, dolorum hic magni minima minus placeat quidem sapiente voluptates.</p>
+        </div>
+
+    </div>
+    <hr>
+
+
+    <br>
+    <br>
+    <h1>PAKET PONUDE</h1>
+
+    <hr>
+
+    <div class="akcije">
+        <img src="slike/ffsdas.jpg"  alt="AMD studio ponuda">
+        <div>
+            <h2>Naslov</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum facilis inventore labore molestias natus nesciunt nobis quaerat quos voluptas. Accusamus atque, dolorum hic magni minima minus placeat quidem sapiente voluptates.</p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="akcije">
+        <img src="slike/ffsdas.jpg" alt="AMD studio ponuda">
+        <div>
+            <h2>Naslov</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum facilis inventore labore molestias natus nesciunt nobis quaerat quos voluptas. Accusamus atque, dolorum hic magni minima minus placeat quidem sapiente voluptates.</p>
+        </div>
+
+    </div>
+    <hr>
+
+
+</div>
+
+<footer>
+    <div>
+        <p>Copyright © 2018 ADM Studio.</p>
+        <p>Adrese: Milovana Glišića 2, 21000 Novi Sad | Bulevar Mihajla Pupina 10Z, Lokal VP 52 i 78, 11070 Novi Beograd</p>
+        <p>Telefoni: 011/301-77-99 i 011/311-59-17 - Beograd | 021/551-597 i 021/551-596 - Novi Sad | Email</p>
+    </div>
+</footer>
+
+<script src="js/js.js"></script>
+
+</body>
+</html>

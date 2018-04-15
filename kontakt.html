@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AMD studio | Kontakt</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/osnova.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Početna strana salona AMD Studio. PC Wizard je firma koja se bavi pružanjem IT usluga u Pančevu i okolini. Vršimo popravke desktop i popravke laptop računara svih modela. U našoj ponudi imamo laptopove, računare i mobilne telefone.">
+    <meta name="author" content="Marko Maletin markomaletin@gmail.com">
+    <meta name="keywords" content="AMD Studio, sminka, nokti, depilacija, masaza, frizura">
+
+
+    <style>
+
+
+        #sadrzaj
+        {
+            color: #171415;
+            padding: 50px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            margin-bottom: 0px;
+            z-index: -10;
+        }
+
+        label
+        {
+            line-height: 40px;
+        }
+
+        input
+        {
+            width: 30%;
+            height: 25px;
+            padding-left: 5px;
+            margin-left: 10px;
+            border-width: 1px;
+            border-radius: 4px;
+            outline-color: #80002a;
+        }
+
+        textarea
+        {
+            width: 50%;
+            height: 20vh;
+            padding: 5px;
+            border-width: 1px;
+            border-radius: 4px;
+            max-width: 100%;
+            min-width: 20%;
+            max-height: 40vh;
+            min-height: 5vh;
+            outline-color: #80002a;
+        }
+
+        .red
+        {
+            color: red;
+        }
+
+        button
+        {
+            height: 50px;
+            width: 200px;
+            border-width: 1px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            background-color: #660022;
+            margin-top: 10px;
+            outline: none;
+        }
+
+        button:hover
+        {
+            background-color: #ffffff;
+            color: #660022;
+            border-color: #660022;
+        }
+
+
+        @media only screen and (max-width: 1300px) {
+
+            #sadrzaj {
+                left: 0;
+                right: 0;
+                margin-top: 30vh;
+                margin-bottom: 5vh;
+                width: 100%;
+                padding: 0;
+            }
+
+            p{
+                margin: 0 10px;
+                text-align: justify;
+                padding: 0;
+            }
+
+            input, textarea, button
+            {
+                margin-left: 0;
+                margin-right: 0;
+                width: 100%;
+            }
+
+            #sadrzaj > div{
+                margin: 20px auto;
+                width: 90%;
+            }
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+
+<header>
+    <a href="index.html"><img id="logo" src="slike/logo.png"  alt="AMD studio logo" ></a>
+    <nav id="navigacija">
+        <ul>
+
+            <a href="index.html"><li>Naslovna</li></a>
+            <a href="usluge.html"><li>Usluge</li></a>
+            <a href="galerija.html"> <li>Galerija</li></a>
+            <a href="o_nama.html"> <li>O nama</li></a>
+            <a href="#"><li id="trenutna">Kontakt</li></a>
+
+        </ul>
+    </nav>
+
+        <div id="ikonice">
+            <a href="https://sr-rs.facebook.com/" target="_blank"><img class="ikonica" src="slike/facebook.png" alt="AMD studio facebook"></a>
+            <a href="https://www.instagram.com/?hl=sr" target="_blank"><img class="ikonica" src="slike/instagram.png" alt="AMD studio instagram"></a>
+        </div>
+
+    <button type="button" id="otvori_meni_dugme" ></button>
+
+</header>
+
+
+<div id="meni_dugme">
+    <a href="index.html"><img src="slike/logo.png" ></a>
+    <hr>
+    <nav id="navigacija_dugme">
+        <ul>
+
+            <a href="index.html"><li>Naslovna</li></a>
+            <a href="usluge.html"><li>Usluge</li></a>
+            <a href="galerija.html"> <li>Galerija</li></a>
+            <a href="o_nama.html"> <li>O nama</li></a>
+            <a href="#"><li>Kontakt</li></a>
+
+        </ul>
+
+    </nav>
+
+</div>
+
+<div id="sadrzaj">
+
+    <h1>KONTAKT</h1><hr>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci amet blanditiis corporis esse et fugit ipsum laudantium, nihil obcaecati porro quisquam saepe sit sunt unde ut vero vitae voluptates.</p>
+        <br>
+        <p>Naša adresa:</p>
+        <p>Telefon:</p>
+        <p>Radno vreme:</p>
+        <p>E-mail:</p>
+        <p>Website:</p>
+    </div>
+    <br>
+
+    <h1>POŠALJITE NAM PORUKU</h1><hr>
+
+    <div>
+        <label>Ime <strong class="red">*</strong></label>
+        <input type="text" placeholder="Unesite ime"><br>
+        <label>E-mail <strong class="red">*</strong></label>
+        <input type="text" placeholder="Vaš e-mail"><br>
+        <label>Naslov poruke <strong class="red">*</strong></label>
+        <input type="text" placeholder="Naslov poruke"><br>
+        <label>Poruka <strong class="red">*</strong></label><br>
+        <textarea placeholder="Tekst poruke"></textarea><br>
+        <label>Polja označena sa <strong class="red"> * </strong> su obavezna polja.</label><br>
+        <button type="button">POSALJITE PORUKU</button>
+
+    </div>
+
+    <br>
+    <h1>GDE SE NALAZIMO?</h1><hr>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.366156357944!2d20.482048714972212!3d44.80158278543259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9d0cf6f935%3A0x38c9ff7dbc3e98ec!2z0JHRg9C70LXQstCw0YAg0LrRgNCw0ZnQsCDQkNC70LXQutGB0LDQvdC00YDQsCAxNjIsINCR0LXQvtCz0YDQsNC0!5e0!3m2!1ssr!2srs!4v1519579984447" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <hr>
+
+</div>
+
+<footer>
+    <div>
+        <p>Copyright © 2018 ADM Studio.</p>
+        <p>Adrese: Milovana Glišića 2, 21000 Novi Sad | Bulevar Mihajla Pupina 10Z, Lokal VP 52 i 78, 11070 Novi Beograd</p>
+        <p>Telefoni: 011/301-77-99 i 011/311-59-17 - Beograd | 021/551-597 i 021/551-596 - Novi Sad | Email</p>
+    </div>
+</footer>
+
+<script src="js/js.js"></script>
+
+</body>
+</html>

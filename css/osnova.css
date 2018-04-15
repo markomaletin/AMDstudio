@@ -1,0 +1,283 @@
+
+body
+
+{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+hr
+{
+    height: 1px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+h1
+{
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2) ;
+}
+
+
+header
+{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 120px;
+    background-color:  #660022;
+    padding: 1px;
+    margin-bottom: 50px ;
+    z-index: 50;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.5) ;
+
+}
+
+#logo
+{
+    width: auto;
+    height: 120px;
+    position: relative;
+    top: 0px;
+    left: 20px;
+    float: left;
+
+}
+
+nav
+{
+    position:  relative;
+    left: 20%;
+    top: 35px;
+    margin-top: 0px;
+    width: 70%;
+}
+
+ul
+{
+
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+li
+{
+
+    text-transform: initial ;
+    color: #fff;
+    font-size: 20px;
+    font-variant: all-petite-caps;
+//font-weight: bold;
+    display: inline;
+    padding: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+
+ul > a
+{
+    text-decoration: none;
+}
+
+li:hover
+{
+
+    color: #80002a;
+    background-color: white;
+    border-radius: 5px;
+    transition-duration: 300ms;
+    padding: 10px;
+//border: #80002a 1px solid;
+    font-size: 20px;
+//font-weight: bold;
+//display: inline;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+
+}
+
+#trenutna
+{
+    color: #80002a;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.ikonica
+{
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+}
+
+#ikonice
+{
+    position: absolute;
+    top: 15px;
+    right: 40px;
+}
+
+.ikonica:hover
+{
+    opacity: 1;
+}
+
+
+
+footer
+{
+
+    clear: both;
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: 100px;
+
+    background-color: #660022;
+    box-shadow: 0px -1px 5px gray ;
+    background-image: url("../slike/kiss.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 150px;
+
+}
+
+footer p{
+    margin-left: 20px;
+    font-size: 12px;
+    line-height: 6px;
+    color: white;
+}
+
+footer div
+{
+    position: relative;
+    top: 25px;
+}
+
+#meni_dugme
+{
+    display: none;
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border: rgba(0,0,0,0.2) solid 1px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2) ;
+    margin: 0;
+    padding: 0;
+    z-index: 50;
+
+}
+
+#meni_dugme nav
+{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 20vh;
+}
+
+#meni_dugme ul
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#meni_dugme li
+{
+    display: block;
+    width: 100%;
+    color: #171415;
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+#meni_dugme li:hover
+{
+    border-top: #80002a solid 2px;
+    border-bottom: #80002a solid 2px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+    color: #80002a ;
+    font-weight: bold;
+}
+
+#meni_dugme img
+{
+    width: 100%;
+}
+
+#otvori_meni_dugme
+{
+    float: right;
+    margin-right: 3%;
+    margin-top: 2%;
+    width: 50px;
+    height: 50px;
+    border: rgba(255,255,255,0.6) solid 1px;
+    background-color: #660022;
+    border-radius: 5px;
+    background-image: url("../slike/menu.png");
+    background-size: 50px 50px;
+    outline: none;
+    display: none;
+}
+
+#otvori_meni_dugme:hover
+{
+    box-shadow: white 0px 0px 5px;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+
+    #ikonice {
+        display: none;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    #otvori_meni_dugme {
+        display: block;
+    }
+
+    footer
+    {
+        min-height: 40vh;
+        background-position: right bottom;
+    }
+
+    footer p{
+        line-height: 15px;
+        font-size: 12px;
+    }
+
+    #logo
+    {
+        padding-left: 0;
+        margin-left: 0;
+        content: url("../slike/logo_manji.png");
+    }
+
+
+}

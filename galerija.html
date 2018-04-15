@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>AMD studio | Galerija</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/osnova.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Početna strana salona AMD Studio. PC Wizard je firma koja se bavi pružanjem IT usluga u Pančevu i okolini. Vršimo popravke desktop i popravke laptop računara svih modela. U našoj ponudi imamo laptopove, računare i mobilne telefone.">
+    <meta name="author" content="Marko Maletin markomaletin@gmail.com">
+    <meta name="keywords" content="AMD Studio, sminka, nokti, depilacija, masaza, frizura">
+
+
+    <style>
+
+
+        #sadrzaj
+        {
+            color: #171415;
+            padding: 50px;
+
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            margin-bottom: 0px;
+           // box-shadow: 0px 0px 5px gray ;
+            z-index: -10;
+        }
+
+
+
+        .red
+        {
+            width: 100%;
+            min-height: 130px;
+            margin-bottom: 50px;
+
+        }
+
+        .red:last-of-type
+        {
+            min-height: 110px;
+        }
+
+        .red a
+        {
+            color: #171415;
+            text-decoration: none;
+        }
+
+
+        .spoljasnji
+        {
+            width: 24%;
+            height: 150px;
+            overflow: hidden;
+            float: left;
+            margin-right: 1%;
+            border: rgba(0,0,0,0.1) 1px solid;
+            box-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+        }
+
+
+        .spoljasnji:hover
+        {
+            border-radius: 10px;
+            border-color: rgba(0,0,0,0.3);
+            transition-duration: 500ms;
+        }
+
+        .spoljasnji:hover img
+        {
+            transition-duration: 500ms;
+            border-radius: 10px;
+            opacity: 0.8;
+
+        }
+
+
+        .red .spoljasnji:last-child
+        {
+            margin-right: 0;
+        }
+
+        .spoljasnji img
+        {
+            width: 100%;
+        }
+
+        #full
+        {
+            position: fixed;
+            left:20%;
+            //top: 10%;
+            height: auto;
+            width: 60%;
+            z-index: 100;
+            display: none;
+            top: calc( -50vh + 50%);
+            bottom: calc( -50vh + 50%);
+            margin-top: auto;
+            margin-bottom: auto;
+
+        }
+
+        #full img
+        {
+            border: rgba(0,0,0,0.6) 10px solid;
+            width: 100%;
+            height: auto;
+        }
+
+        #close
+        {
+            width: 40px;
+            height: 40px;
+            border-radius: 35px;
+            border: white solid 3px;
+            float: right;
+            position: relative;
+            top: 35px;
+            background:url("slike/close.png") #660022 no-repeat center ;
+            background-size: 20px 20px;
+        }
+
+        #close:hover
+        {
+            outline: black;
+            outline-width: 2px;
+            cursor: pointer;
+        }
+
+        #napred
+        {
+            width: 60px;
+            height: 18%;
+            position: absolute;
+            right: -10px;
+            top: 45%;
+            background: #171415 url("slike/forward.png") no-repeat center;
+            background-size: 50px 50px;
+            opacity: 0.4;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+
+        }
+
+        #nazad
+        {
+            width: 60px;
+            height: 18%;
+            position: absolute;
+            left: 10px;
+            top: 45%;
+            background: #171415 url("slike/back.png") no-repeat center;
+            background-size: 50px 50px;
+            opacity: 0.4;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        #nazad,#napred
+        {
+            cursor: pointer;
+        }
+
+
+        @media only screen and (max-width: 1300px) {
+
+            #sadrzaj {
+                left: 0;
+                right: 0;
+                margin-top: 30vh;
+                margin-bottom: 5vh;
+                width: 100%;
+                padding: 0;
+            }
+
+            .spoljasnji
+            {
+                clear: both;
+                width: 99%;
+                margin: 20px 0;
+                height: auto;
+            }
+
+
+
+            p{
+                margin: 0 20px;
+                text-align: justify;
+                padding: 0;
+            }
+
+
+            #sadrzaj img{
+
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            #full
+            {
+                width: 100%;
+                left: 0;
+            }
+
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+
+<header>
+    <a href="index.html"><img id="logo" src="slike/logo.png"  alt="AMD studio logo"  ></a>
+    <nav id="navigacija">
+        <ul>
+
+            <a href="index.html"><li>Naslovna</li></a>
+            <a href="usluge.html"><li>Usluge</li></a>
+            <a href="#"> <li   id="trenutna" >Galerija</li></a>
+            <a href="o_nama.html"> <li>O nama</li></a>
+            <a href="kontakt.html"><li>Kontakt</li></a>
+
+        </ul>
+    </nav>
+
+        <div id="ikonice">
+            <a href="https://sr-rs.facebook.com/" target="_blank"><img class="ikonica" src="slike/facebook.png" alt="AMD studio facebook"></a>
+            <a href="https://www.instagram.com/?hl=sr" target="_blank"><img class="ikonica" src="slike/instagram.png" alt="AMD studio instagram"></a>
+        </div>
+
+    <button type="button" id="otvori_meni_dugme" ></button>
+
+</header>
+
+
+<div id="meni_dugme">
+    <a href="index.html"><img src="slike/logo.png" ></a>
+    <hr>
+    <nav id="navigacija_dugme">
+        <ul>
+
+            <a href="index.html"><li>Naslovna</li></a>
+            <a href="usluge.html"><li>Usluge</li></a>
+            <a href="#"> <li>Galerija</li></a>
+            <a href="o_nama.html"> <li>O nama</li></a>
+            <a href="kontakt.html"><li>Kontakt</li></a>
+
+        </ul>
+
+    </nav>
+
+</div>
+
+<div id="sadrzaj">
+
+    <h1>NAŠI RADOVI</h1><hr>
+
+    <div class="red">
+
+
+        <div class="spoljasnji">
+                <img class="slika" src="slike/proba.JPG" onclick="prikazi(this)">
+        </div>
+
+        <div class="spoljasnji">
+                <img  class="slika" src="slike/pedikir.jpg" onclick="prikazi(this)">
+        </div>
+
+        <div class="spoljasnji">
+                <img class="slika"  src="slike/manikir.jpg" onclick="prikazi(this)">
+        </div>
+
+        <div class="spoljasnji">
+                <img class="slika"  src="slike/frizer.jpg" onclick="prikazi(this)">
+        </div>
+
+    </div>
+
+    <div class="red">
+
+
+        <div class="spoljasnji">
+            <img class="slika" src="slike/sminka.jpg" onclick="prikazi(this)">
+        </div>
+
+        <div class="spoljasnji">
+            <img  class="slika" src="slike/pedikir.jpg" onclick="prikazi(this)">
+        </div>
+
+        <div class="spoljasnji">
+            <img class="slika"  src="slike/manikir.jpg" onclick="prikazi(this)">
+        </div>
+
+        <div class="spoljasnji">
+            <img class="slika"  src="slike/frizer.jpg" onclick="prikazi(this)">
+        </div>
+
+    </div>
+
+    <div class="red">
+
+
+        <div class="spoljasnji">
+            <img class="slika" src="slike/sminka.jpg" onclick="prikazi(this)">
+        </div>
+
+        <div class="spoljasnji">
+            <img  class="slika" src="slike/pedikir.jpg" onclick="prikazi(this)">
+        </div>
+
+        <div class="spoljasnji">
+            <img class="slika"  src="slike/manikir.jpg" onclick="prikazi(this)">
+        </div>
+
+        <div class="spoljasnji">
+            <img class="slika"  src="slike/frizer.jpg" onclick="prikazi(this)">
+        </div>
+
+    </div>
+
+    <hr>
+
+
+</div>
+
+<div id="full">
+    <div id="close" onclick="ugasi()"></div>
+    <img id="full_slika" src="slike/frizer.jpg"  onclick="sledeca_slika()">
+    <div id="napred" onclick="sledeca_slika()"></div>
+    <div id="nazad" onclick="prethodna_slika()"></div>
+</div>
+
+
+
+
+<footer>
+    <div>
+        <p>Copyright © 2018 ADM Studio.</p>
+        <p>Adrese: Milovana Glišića 2, 21000 Novi Sad | Bulevar Mihajla Pupina 10Z, Lokal VP 52 i 78, 11070 Novi Beograd</p>
+        <p>Telefoni: 011/301-77-99 i 011/311-59-17 - Beograd | 021/551-597 i 021/551-596 - Novi Sad | Email</p>
+    </div>
+</footer>
+
+<script src="js/js.js"></script>
+<script src="js/galerija.js"></script>
+
+</body>
+</html>

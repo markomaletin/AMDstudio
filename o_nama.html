@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AMD studio | O nama</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/osnova.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Početna strana salona AMD Studio. PC Wizard je firma koja se bavi pružanjem IT usluga u Pančevu i okolini. Vršimo popravke desktop i popravke laptop računara svih modela. U našoj ponudi imamo laptopove, računare i mobilne telefone.">
+    <meta name="author" content="Marko Maletin markomaletin@gmail.com">
+    <meta name="keywords" content="AMD Studio, sminka, nokti, depilacija, masaza, frizura">
+
+
+    <style>
+
+
+        #sadrzaj
+        {
+            color: #171415;
+            padding: 50px;
+
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            margin-bottom: 0px;
+           // box-shadow: 0px 0px 5px gray ;
+            z-index: -10;
+        }
+
+
+
+        #sadrzaj img
+        {
+            width: 50%;
+            float: right;
+            margin: 20px;
+        }
+
+        #sadrzaj p
+        {
+            text-align: justify;
+        }
+
+        @media only screen and (max-width: 1300px) {
+
+            #sadrzaj {
+                left: 0;
+                right: 0;
+                margin-top: 30vh;
+                margin-bottom: 5vh;
+                width: 100%;
+                padding: 0;
+            }
+
+            p{
+                margin: 0 20px;
+                text-align: justify;
+                padding: 0;
+            }
+
+
+            #sadrzaj img{
+
+                width: 100%;
+                margin: 0 auto;
+            }
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+
+<header>
+    <a href="index.html"><img id="logo" src="slike/logo.png"  alt="AMD studio logo" ></a>
+    <nav id="navigacija">
+        <ul>
+
+            <a href="index.html"><li>Naslovna</li></a>
+            <a href="usluge.html"><li>Usluge</li></a>
+            <a href="galerija.html"> <li>Galerija</li></a>
+            <a href="#"> <li  id="trenutna" >O nama</li></a>
+            <a href="kontakt.html"><li>Kontakt</li></a>
+
+        </ul>
+    </nav>
+
+        <div id="ikonice">
+            <a href="https://sr-rs.facebook.com/" target="_blank"><img class="ikonica" src="slike/facebook.png" alt="AMD studio facebook"></a>
+            <a href="https://www.instagram.com/?hl=sr" target="_blank"><img class="ikonica" src="slike/instagram.png" alt="AMD studio instagram"></a>
+        </div>
+
+    <button type="button" id="otvori_meni_dugme" ></button>
+
+</header>
+
+
+<div id="meni_dugme">
+    <a href="index.html"><img src="slike/logo.png" ></a>
+    <hr>
+    <nav id="navigacija_dugme">
+        <ul>
+
+            <a href="index.html"><li>Naslovna</li></a>
+            <a href="usluge.html"><li>Usluge</li></a>
+            <a href="galerija.html"> <li>Galerija</li></a>
+            <a href="#"> <li>O nama</li></a>
+            <a href="kontakt.html"><li>Kontakt</li></a>
+
+        </ul>
+
+    </nav>
+
+</div>
+
+<div id="sadrzaj">
+
+    <h1>O NAMA</h1><hr>
+
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque commodi consequuntur corporis dicta distinctio, dolores eligendi eveniet, inventore nulla officiis perspiciatis possimus quam quasi quis reprehenderit rerum ut.lorem</p>
+    <img src="slike/o_nama.png"  alt="AMD studio logo">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque commodi consequuntur corporis dicta distinctio, dolores eligendi eveniet, inventore nulla officiis perspiciatis possimus quam quasi quis reprehenderit rerum ut.lorem</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque commodi consequuntur corporis dicta distinctio, dolores eligendi eveniet, inventore nulla officiis perspiciatis possimus quam quasi quis reprehenderit rerum ut.lorem</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque commodi consequuntur corporis dicta distinctio, dolores eligendi eveniet, inventore nulla officiis perspiciatis possimus quam quasi quis reprehenderit rerum ut.lorem</p>
+
+    <h1 style="clear: both">TIM</h1><hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque commodi consequuntur corporis dicta distinctio, dolores eligendi eveniet, inventore nulla officiis perspiciatis possimus quam quasi quis reprehenderit rerum ut.lorem</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque commodi consequuntur corporis dicta distinctio, dolores eligendi eveniet, inventore nulla officiis perspiciatis possimus quam quasi quis reprehenderit rerum ut.lorem</p>
+
+
+
+</div>
+
+<footer>
+    <div>
+        <p>Copyright © 2018 ADM Studio.</p>
+        <p>Adrese: Milovana Glišića 2, 21000 Novi Sad | Bulevar Mihajla Pupina 10Z, Lokal VP 52 i 78, 11070 Novi Beograd</p>
+        <p>Telefoni: 011/301-77-99 i 011/311-59-17 - Beograd | 021/551-597 i 021/551-596 - Novi Sad | Email</p>
+    </div>
+</footer>
+
+<script src="js/js.js"></script>
+
+</body>
+</html>
