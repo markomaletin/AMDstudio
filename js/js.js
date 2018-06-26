@@ -31,8 +31,6 @@ addEventListener("scroll", function () {
         logo.style.height='120px';
         navigacija.style.transitionDuration = '500ms';
         navigacija.style.top='35px';
-
-
     }
 
     if(meni.style.display==='block')
@@ -46,7 +44,6 @@ addEventListener("scroll", function () {
 addEventListener('load', function () {
 
     document.getElementById("meni_dugme").style.display='none';
-
 
 });
 
