@@ -1,53 +1,65 @@
+$(document).ready(function () {
+    var trenutna_slika=null;
+    var sve_slike= $(".slika");
+    var slika= $("#full_slika");
+    var postolje= $("#full");
 
-var trenutna_slika=null;
-var sve_slike= document.getElementsByClassName("slika");
-var slika=document.getElementById("full_slika");
-
-
-function ugasi() {
-    var obj=document.getElementById("full");
-    obj.style.display="none";
-}
-
-
-
-function prikazi(slika_za_prikaz) {
-
-    if (screen.availWidth>600) {
-        var obj = document.getElementById("full");
-
-        slika.src = slika_za_prikaz.src;
-        obj.style.display = "block";
-        trenutna_slika = slika_za_prikaz;
+    function ugasi() {
+        postolje.css("display","none")
     }
-}
 
-function sledeca_slika() {
-    for (var i=0; i< sve_slike.length; i++)
-    {
+    $("#close").click(function () {
+        postolje.css("display","none")
+    });
 
-        if(sve_slike[i]===trenutna_slika && i+1!==sve_slike.length)
-        {
+    sve_slike.click(function () {
+        if (screen.availWidth>600) {
 
-            console.log(i);
-            trenutna_slika=sve_slike[i+1];
-            slika.src = trenutna_slika.src;
-            break;
+
+
+            slika.attr("src",$(this).attr("src"));
+            postolje.css("display","block");
+            trenutna_slika = $(this);
+            $("#napred, #nazad").css("top", parseInt((postolje.css("height")).substr(0,(postolje.css("height")).length - 2))/2-50 +"px");
+            slika.css("margin-left", (parseInt((postolje.css("width")).substr(0,(postolje.css("width")).length - 2)) - parseInt((slika.css("width")).substr(0,(slika.css("width")).length - 2)))/2 +"px" );
 
         }
-    }
+    });
 
-}
+    $("#napred").click(function () {
 
-function prethodna_slika() {
-    for (var i=0; i< sve_slike.length; i++)
-    {
-        if(sve_slike[i]===trenutna_slika  && i!==0)
+        for (var i=0; i< sve_slike.length; i++)
         {
-            console.log(i);
-            trenutna_slika=sve_slike[i-1];
-            slika.src = trenutna_slika.src;
-            break;
+            if( sve_slike.eq(i).attr("src") === trenutna_slika.attr("src") && i+1!==sve_slike.length)
+            {
+                console.log(postolje.css("height"));
+                trenutna_slika = sve_slike.eq(i+1);
+                slika.attr("src", trenutna_slika.attr("src"));
+                slika.css("margin-left", (parseInt((postolje.css("width")).substr(0,(postolje.css("width")).length - 2)) - parseInt((slika.css("width")).substr(0,(slika.css("width")).length - 2)))/2 +"px" );
+                $("#napred, #nazad").css("top", parseInt((postolje.css("height")).substr(0,(postolje.css("height")).length - 2))/2-50 +"px");
+                break;
+
+            }
+
         }
-    }
-}
+
+    });
+
+    $("#nazad").click(function () {
+
+        for (var i=0; i< sve_slike.length; i++)
+        {
+            if(sve_slike.eq(i).attr("src") === trenutna_slika.attr("src") && i!==0)
+            {
+                trenutna_slika = sve_slike.eq(i-1);
+                slika.attr("src", trenutna_slika.attr("src"));
+                slika.css("margin-left", (parseInt((postolje.css("width")).substr(0,(postolje.css("width")).length - 2)) - parseInt((slika.css("width")).substr(0,(slika.css("width")).length - 2)))/2 +"px" );
+                $("#napred, #nazad").css("top", parseInt((postolje.css("height")).substr(0,(postolje.css("height")).length - 2))/2-50 +"px");
+                break;
+            }
+        }
+
+    });
+
+});
+

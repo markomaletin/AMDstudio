@@ -12,23 +12,10 @@
     <meta name="author" content="Marko Maletin markomaletin@gmail.com">
     <meta name="keywords" content="AMD Studio, sminka, nokti, depilacija, masaza, frizura">
 
+    <script src="js/jquery.js"></script>
 
     <style>
 
-
-        #sadrzaj
-        {
-            color: #171415;
-            padding: 50px;
-
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 100px;
-            margin-bottom: 0px;
-           // box-shadow: 0px 0px 5px gray ;
-            z-index: -10;
-        }
 
 
 
@@ -94,23 +81,27 @@
         {
             position: fixed;
             left:20%;
-            //top: 10%;
+            top: 10vh;
             height: auto;
+            max-height: 80vh;
             width: 60%;
+            background-color: rgba(255,255,255,0.9);
             z-index: 100;
             display: none;
-            top: calc( -50vh + 50%);
-            bottom: calc( -50vh + 50%);
-            margin-top: auto;
-            margin-bottom: auto;
+            margin: 0 auto;
+            border: rgba(0,0,0,0.6) 10px solid;
+            padding: 0;
 
         }
 
         #full img
         {
-            border: rgba(0,0,0,0.6) 10px solid;
-            width: 100%;
+            //border: rgba(0,0,0,0.6) 10px solid;
+            width: auto;
+            max-width: 100%;
             height: auto;
+            max-height: 80vh;
+            margin: 0 auto;
         }
 
         #close
@@ -120,8 +111,9 @@
             border-radius: 35px;
             border: white solid 3px;
             float: right;
-            position: relative;
-            top: 35px;
+            position: absolute;
+            right: 35px;
+            top: -20px;
             background:url("slike/close.png") #660022 no-repeat center ;
             background-size: 20px 20px;
         }
@@ -136,9 +128,9 @@
         #napred
         {
             width: 60px;
-            height: 18%;
+            height: 100px;
             position: absolute;
-            right: -10px;
+            right: 0;
             top: 45%;
             background: #171415 url("slike/forward.png") no-repeat center;
             background-size: 50px 50px;
@@ -151,9 +143,9 @@
         #nazad
         {
             width: 60px;
-            height: 18%;
+            height: 100px;
             position: absolute;
-            left: 10px;
+            left: 0;
             top: 45%;
             background: #171415 url("slike/back.png") no-repeat center;
             background-size: 50px 50px;
@@ -167,6 +159,10 @@
             cursor: pointer;
         }
 
+        footer
+        {
+            top: 30vh;
+        }
 
         @media only screen and (max-width: 1300px) {
 
@@ -268,19 +264,19 @@
 
 
         <div class="spoljasnji">
-                <img class="slika" src="slike/proba.JPG" onclick="prikazi(this)">
+                <img class="slika" src="slike/proba.JPG">
         </div>
 
         <div class="spoljasnji">
-                <img  class="slika" src="slike/pedikir.jpg" onclick="prikazi(this)">
+                <img  class="slika" src="slike/pedikir.jpg">
         </div>
 
         <div class="spoljasnji">
-                <img class="slika"  src="slike/manikir.jpg" onclick="prikazi(this)">
+                <img class="slika"  src="slike/manikir.jpg">
         </div>
 
         <div class="spoljasnji">
-                <img class="slika"  src="slike/frizer.jpg" onclick="prikazi(this)">
+                <img class="slika"  src="https://ocdn.eu/pulscms-transforms/1/IW8ktkqTURBXy8wZDNjZTJjZmRkMjEzN2Q1NmI5NzFiYzM3MTU4NTBkYi5qcGVnkZUCzQJsAMLD">
         </div>
 
     </div>
@@ -289,19 +285,19 @@
 
 
         <div class="spoljasnji">
-            <img class="slika" src="slike/sminka.jpg" onclick="prikazi(this)">
+            <img class="slika" src="slike/proba.JPG">
         </div>
 
         <div class="spoljasnji">
-            <img  class="slika" src="slike/pedikir.jpg" onclick="prikazi(this)">
+            <img  class="slika" src="slike/pedikir.jpg">
         </div>
 
         <div class="spoljasnji">
-            <img class="slika"  src="slike/manikir.jpg" onclick="prikazi(this)">
+            <img class="slika"  src="slike/manikir.jpg">
         </div>
 
         <div class="spoljasnji">
-            <img class="slika"  src="slike/frizer.jpg" onclick="prikazi(this)">
+            <img class="slika"  src="https://ocdn.eu/pulscms-transforms/1/IW8ktkqTURBXy8wZDNjZTJjZmRkMjEzN2Q1NmI5NzFiYzM3MTU4NTBkYi5qcGVnkZUCzQJsAMLD">
         </div>
 
     </div>
@@ -310,22 +306,45 @@
 
 
         <div class="spoljasnji">
-            <img class="slika" src="slike/sminka.jpg" onclick="prikazi(this)">
+            <img class="slika" src="slike/proba.JPG">
         </div>
 
         <div class="spoljasnji">
-            <img  class="slika" src="slike/pedikir.jpg" onclick="prikazi(this)">
+            <img  class="slika" src="slike/pedikir.jpg">
         </div>
 
         <div class="spoljasnji">
-            <img class="slika"  src="slike/manikir.jpg" onclick="prikazi(this)">
+            <img class="slika"  src="slike/manikir.jpg">
         </div>
 
         <div class="spoljasnji">
-            <img class="slika"  src="slike/frizer.jpg" onclick="prikazi(this)">
+            <img class="slika"  src="https://ocdn.eu/pulscms-transforms/1/IW8ktkqTURBXy8wZDNjZTJjZmRkMjEzN2Q1NmI5NzFiYzM3MTU4NTBkYi5qcGVnkZUCzQJsAMLD">
         </div>
 
     </div>
+
+    <div class="red">
+
+
+        <div class="spoljasnji">
+            <img class="slika" src="slike/proba.JPG">
+        </div>
+
+        <div class="spoljasnji">
+            <img  class="slika" src="slike/pedikir.jpg">
+        </div>
+
+        <div class="spoljasnji">
+            <img class="slika"  src="slike/manikir.jpg">
+        </div>
+
+        <div class="spoljasnji">
+            <img class="slika"  src="https://ocdn.eu/pulscms-transforms/1/IW8ktkqTURBXy8wZDNjZTJjZmRkMjEzN2Q1NmI5NzFiYzM3MTU4NTBkYi5qcGVnkZUCzQJsAMLD">
+        </div>
+
+    </div>
+
+
 
     <hr>
 
@@ -333,10 +352,10 @@
 </div>
 
 <div id="full">
-    <div id="close" onclick="ugasi()"></div>
+    <div id="close" ></div>
     <img id="full_slika" src="slike/frizer.jpg"  onclick="sledeca_slika()">
-    <div id="napred" onclick="sledeca_slika()"></div>
-    <div id="nazad" onclick="prethodna_slika()"></div>
+    <div id="napred" ></div>
+    <div id="nazad"></div>
 </div>
 
 
